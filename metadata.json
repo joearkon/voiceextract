@@ -1,0 +1,5 @@
+{
+  "name": "Anime Voice Extractor",
+  "description": "Extract specific character voice lines from anime clips using Gemini 2.5 Flash for AI training materials.",
+  "requestFramePermissions": []
+}
