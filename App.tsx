@@ -167,7 +167,8 @@ export default function App() {
       addLog(`连接到远程流: ${urlInput}...`);
 
       try {
-          const response = await fetch(urlInput);
+          const proxyUrl = `/api/proxy-video?url=${encodeURIComponent(urlInput)}`;
+          const response = await fetch(proxyUrl);
           if (!response.ok) {
               throw new Error(`Failed to fetch video: ${response.statusText}`);
           }
